@@ -1,0 +1,4 @@
+FROM registry.cn-hangzhou.aliyuncs.com/fyscx/jmeter:latest
+LABEL name = "lijy"
+ADD case /workspace
+CMD ["/bin/bash","/workspace/run_hmwc.sh"]
